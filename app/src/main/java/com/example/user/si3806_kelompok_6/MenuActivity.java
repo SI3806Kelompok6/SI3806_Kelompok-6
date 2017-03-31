@@ -35,6 +35,7 @@ public class MenuActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager){
         Adapter adapter = new Adapter(getSupportFragmentManager());
         adapter.addFragment(new LoginContentFragment(), "Login");
+        adapter.addFragment(new PromoContentFragment(), "Promo");
         viewPager.setAdapter(adapter);
     }
 
